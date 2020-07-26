@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCabinet</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script>
+           let login =sessionStorage.getItem("login"); 
+        if(login === null || login === undefined){
+            document.location.href="login.html";
+        }
+        else{
+            sessionStorage.removeItem("login")
+        }
+    </script>
+    <style>
+        a{
+            color: black;
+            text-decoration: none;
+
+        }
+        ul span{
+            color:blue;
+        }
+        ul li{
+            list-style-type: none;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        h1 , a{
+            display: inline-block;
+        }
+        .a{
+            float: right;
+            color: white;
+            background-color: red;
+            border-radius: 3px ;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome , Dear <span id="name"></span> - <span id="email"></span></h1>
+    <a href="index.html" class="a">Sign out</a>
+
+<div>
+    <ul>
+        <li>
+            <a href="">Name:  <span id="name2"></span></a>
+        </li>
+        <li>
+            <a href="" >Surname:   <span id="surname"></span></a>
+        </li>
+        <li>
+            <a href="" >Email:   <span id="email2"></span></a>
+        </li>
+        <li>
+            <a href="">Password:   <span id="password"></span></a>
+        </li>
+    </ul>
+</div>
+    
+    <script>
+        let x = JSON.parse(sessionStorage["user"]);
+         document.getElementById("name").innerHTML= x.name; 
+         document.getElementById("email").innerHTML=x.email;
+         document.getElementById("name2").innerHTML= x.name; 
+         document.getElementById("email2").innerHTML=x.email;
+         document.getElementById("surname").innerHTML= x.surname; 
+         document.getElementById("password").innerHTML=x.password;
+    </script>
+</body>
+</html>

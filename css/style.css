@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  background-color: #363737;
+  /*Site Background*/
+  color: white;
+}
+
+body .box {
+  width: 300px;
+  height: 300px;
+}
+
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2px 0px;
+}
+
+body header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav img {
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+body header .nav .nav-ul {
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 200px;
+}
+
+body header .nav .nav-ul .listitem {
+  padding: 0px 10px;
+  display: inline-block;
+}
+
+body header .nav .nav-ul .listitem a {
+  color: white;
+  text-decoration: none;
+}
+
+body header .nav .nav-ul .listitem a:hover {
+  color: red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header .nav .button-list {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+body header .nav .button-list .btn {
+  display: inline-block;
+}
+
+body header .nav .button-list .btn a {
+  text-decoration: none;
+  background-color: #06b8b8;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 3px;
+}
+
+body main .about-us {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .about-us .about {
+  width: 400px;
+}
+
+body main .about-us .about h1 {
+  font-size: 30px;
+}
+
+body main .about-us .about p {
+  color: #777777;
+}
+
+body main .about-us .about .moreabout {
+  padding: 10px 15px;
+}
+
+body main .about-us .about .moreabout:hover {
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+body main .about-us .img {
+  height: 100%;
+}
+
+body main .about-us .img img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+body main .photoandtext {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .photoandtext .photo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .photoandtext .photo .hover {
+  display: none;
+  position: absolute;
+  top: 0px;
+  border-radius: 5px;
+  background-color: #8490ff;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  opacity: 0.85;
+}
+
+body main .photoandtext .photo .hover h5 {
+  margin-top: 80px;
+}
+
+body main .photoandtext .photo:hover .hover {
+  display: block;
+}
+
+body main .photocard-menu {
+  margin-top: 100px;
+}
+
+body main .photocard-menu #cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .photocard-menu #cards-list .box {
+  position: relative;
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .photocard-menu #cards-list .box .overflow {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  top: 27px;
+  width: 300px;
+  height: 200px;
+}
+
+body main .photocard-menu #cards-list .box .overflow h5 {
+  margin-top: 90px;
+  color: white;
+}
+
+body main .photocard-menu #cards-list .box:hover .overflow {
+  display: block;
+  text-align: center;
+  opacity: 0.85;
+  background-color: #8490ff;
+}
+
+body footer {
+  background-color: #727272;
+  /*Footer Background*/
+  margin: 0;
+  display: block;
+}
+
+body footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0px;
+}
+
+body footer .container .logo img {
+  width: 60px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50px;
+}
+
+body footer .container .foot-bar .nav-ul .listitem {
+  list-style-type: none;
+}
+
+body footer .container .foot-bar .nav-ul .listitem a {
+  font-size: 15px;
+  color: white;
+}
+
+body footer .container .foot-bar .nav-ul .listitem a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+body footer .container .social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer .container .social-icon i {
+  padding: 5px 0px;
+}
+
+body footer .container .social-icon i:hover {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  body header .nav .nav-ul {
+    display: none;
+  }
+  body main .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .about-us .about {
+    width: 300px;
+  }
+  body main .about-us .img img {
+    width: 100%;
+    height: 100%;
+  }
+  body main .photoandtext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .photoandtext img {
+    width: 100%;
+  }
+  body main .photoandtext .collasible-text {
+    margin-top: 50px;
+  }
+  body main .photocard-menu #cards-list .box {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main .photocard-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body footer img {
+    width: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

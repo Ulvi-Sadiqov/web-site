@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    background-color: #363737 ; /*Site Background*/
+    color:white;
+    .box{
+        width: 300px;
+        height: 300px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 2px 0px;
+        .nav{
+            img{
+                margin-left: 20px;
+                background-color: white;
+                border-radius: 30px;
+            }
+            display: flex;
+            align-items: center;
+            .nav-ul{
+                display: inline-block;
+                position: absolute;
+                top: 13px;
+                right: 200px;
+
+                .listitem{
+                    padding: 0px 10px;
+                    display: inline-block;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        &:hover{
+                            color: red;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+            .button-list{
+                display: inline-block;
+                position: absolute;
+                right: 10px;
+                top: 7px;
+                .btn{
+                    display: inline-block;
+
+                    a{
+                        text-decoration: none;
+                     background-color: rgb(6, 184, 184);
+                     color: white;
+                     padding: 10px 10px;
+                     border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about-us{
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            .about{
+                width: 400px;
+                h1{
+                    font-size: 30px;
+                }
+               p{
+                   color:#777777;
+               }
+               .moreabout{
+                padding: 10px 15px;
+                   &:hover{
+                       text-decoration: none;
+                       padding: 15px 20px;
+                   }
+               }
+            }
+            .img{
+                height: 100%;
+                img{
+                    width: 500px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .photoandtext{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+          
+        .photo{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+        .hover{
+            display: none;
+           position: absolute;
+           top: 0px;
+           border-radius: 5px;
+           background-color: #8490ff;
+           width: 100%;
+           height: 200px;
+           text-align: center;
+           opacity: 0.85;
+           h5{
+               margin-top: 80px;
+           }
+        }
+                &:hover{
+                    .hover{
+                        display: block;
+                    }
+            }
+        }
+        
+        }
+        .photocard-menu{
+           
+            margin-top: 100px;
+            #cards-list{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .box{
+                    position: relative;
+                margin: 0px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                   .overflow{
+                       display:none;
+                    position: absolute;
+                       border-radius: 5px;
+                       top: 27px;
+                       width: 300px;
+                       height: 200px;
+                       h5{
+                           margin-top: 90px;
+                           color: white;
+                       }
+                   }
+                    &:hover{  
+                        .overflow{
+                        display: block;
+                        text-align: center;
+                        opacity: 0.85;
+                        background-color: #8490ff;
+                        
+                        }
+              }
+                }
+            }
+        }
+    }
+
+    footer{
+       background-color: rgb(114, 114, 114); /*Footer Background*/
+     margin: 0;
+     display: block;
+       .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+       padding: 50px 0px ;
+       .logo{
+        img{
+            width: 60px;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 50px;
+        }
+    }
+    .foot-bar{
+        .nav-ul{
+            .listitem{
+                list-style-type: none;
+                a{
+                    font-size:15px;
+                    color: white;
+                    &:hover{
+                        color: blue;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: column;
+        i{
+            padding: 5px 0px;
+            &:hover{
+                font-size: 25px;
+            }
+        }
+    }
+
+       }
+ 
+    }
+}
+
+@media only screen and(max-width:700px){
+    body{
+        header{
+            .nav{
+                .nav-ul{
+                    display: none;
+                }
+            }
+        }
+        main{
+            .about-us{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column-reverse;
+                .about{
+                    width: 300px;
+                }
+                .img{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .photoandtext{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+                .collasible-text{
+                    margin-top: 50px;
+                }
+            }
+            .photocard-menu{
+               #cards-list{
+                   .box{
+                       margin: 0px;
+                   }
+               }
+            }
+          
+            
+        }
+    }
+}
+
+@media only screen and(max-width:600px){
+    body{
+        main{
+            .photocard-menu{
+                display: flex;
+            }
+        }
+        footer{
+            display:flex;
+            justify-content: space-evenly;
+            img{
+               width: 50px;
+
+            }
+        }
+    }
+}
+
+

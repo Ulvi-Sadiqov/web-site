@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Center</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/card.js"></script>
+  <script src="https://kit.fontawesome.com/9bc3dcb3e0.js" crossorigin="anonymous"></script> 
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!--header Start-->
+  <header class="bg-success">
+    <nav class="nav">
+      <img src="images/logo.png" alt="Site logo" width="50px">
+      <ul class="nav-ul">
+        <li class="listitem">
+          <a href="#">Home</a>
+        </li>
+        <li class="listitem">
+          <a href="#">About</a>
+        </li>
+        <li class="listitem">
+          <a href="#">Contact</a>
+        </li>
+
+        <li class="listitem">
+          <a href="#">Settings</a>
+        </li>
+      </ul>
+      <ul class="button-list">
+        <li class="btn">
+          <a href="register.html">Register</a>
+        </li>
+        <li class="btn">
+          <a href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--header End-->
+
+  <!--Main Start-->
+  <main>
+    <!--About Section Start-->
+    <section class="about-us">
+      <div class="about">
+        <h1>About us</h1>
+        <p style="color: rgb(165, 165, 165);">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, delectus!
+          Nemo quasi facere repellat
+          veritatis possimus quia enim itaque </p>
+        <a href="#"  class="moreabout" style="color:white;background-color:rgb(6, 184, 184);border-radius: 5px;text-decoration: none;">More
+          About</a>
+      </div>
+      <div class="img">
+        <img src="images/photo_1.jpg" alt="" height="100%">
+      </div>
+    </section>
+    <!--About Section End-->
+
+    <!--Photo And Collapse text Section Start-->
+
+    <section class="photoandtext">
+      <div class="photo">
+        <img
+          src="https://4.bp.blogspot.com/-NusT8_BxXvU/WigtjvJvKLI/AAAAAAABOyg/VP7N3f2xgkAOOU2LPKaVCBdTsMiDJp_EgCK4BGAYYCw/s1600/Web-design.jpg"
+          alt="" width="350px" style="border-radius: 5px;" height="200px">
+          <div class="hover">
+            <h5>Computer</h5>
+         </div>
+        </div>
+       
+   
+      <div class="collasible-text" style="width:300px;">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button style="font-size: 20px;" class="btn btn-link" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Text
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="color: black;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button style="font-size: 20px;" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Date
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body" style="color: black;">
+             19/7/2020 11:01
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!--Photo And Collapse text Section End-->
+
+    <!--Card Section Start-->
+    <section class="photocard-menu">
+      <div id="cards-list">
+              
+      </div>
+    </section>
+    <!--Card Section End-->
+
+  </main>
+  <!--Main End-->
+
+  <!--Footer Start-->
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" width="30px" alt="">
+      </div>
+      <div class="foot-bar">
+        <ul class="nav-ul">
+          <li class="listitem">
+            <a href="#">Home</a>
+          </li>
+          <li class="listitem">
+            <a href="#">About</a>
+          </li>
+          <li class="listitem">
+            <a href="#">Contact</a>
+          </li>
+
+          <li class="listitem">
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-icon" style="width: 50px;display: flex;flex-direction: column;justify-content: center;">
+        <!--Sosial Icons-->
+        <a href="https://facebook.com/" style="color: blue;"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/" style="color: rgb(246, 160, 160);"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/" style="color: aqua ;"><i class="fab fa-twitter"></i></a>
+        <a href="https://pinterest.com/" style="color: red;"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+
+
+
+  </footer>
+  <!--Footer End-->
+
+
+  <script>
+    function getAllProducts() {
+      return cards; //return allcards
+    }
+
+
+    function creatCardContainer(products) {
+      let mainBox = document.createElement("div");
+      mainBox.className = "box";
+      let Photo = document.createElement("img");
+      Photo.src = products.photo;
+      Photo.style.width = "300px"
+      Photo.style.height = "200px"
+      Photo.style.borderRadius = "5px"
+      mainBox.appendChild(Photo)
+      let Text = document.createElement("p");
+      Text.innerText = products.text;
+      Text.style.fontSize = "20px"
+      mainBox.appendChild(Text);
+      let Overflow = document.createElement("div");
+      Overflow.className = "overflow";
+      mainBox.appendChild(Overflow);
+      let OverflowText = document.createElement("h5");
+      OverflowText.innerText= products.OverflowText;
+      Overflow.appendChild(OverflowText);
+
+      return mainBox;
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let allProduct = getAllProducts(); 
+
+      for (let prod of allProduct) {
+        let productBox = creatCardContainer(prod);
+        document.getElementById("cards-list").appendChild(productBox);
+      }
+    })
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

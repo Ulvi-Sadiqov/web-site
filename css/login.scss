@@ -1,0 +1,76 @@
+@media only screen and(max-width:900px){
+    body{
+        background-size: 100% 100%;
+        .form{
+            width: 280px;
+            padding: 20px 10px;
+            box-shadow: none;
+            label{
+                font-size: 15px;
+            }
+            #password,#email{
+                width: 280px;
+                height:40px;
+            }
+        }
+    }
+}
+
+body{
+    background-image: url(https://4.bp.blogspot.com/-NusT8_BxXvU/WigtjvJvKLI/AAAAAAABOyg/VP7N3f2xgkAOOU2LPKaVCBdTsMiDJp_EgCK4BGAYYCw/s1600/Web-design.jpg);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    opacity: 1;
+    form{
+        position: absolute;
+        z-index: 10000;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 20px;
+        box-shadow: 5px 5px 5px rgb(218, 218, 218);
+        .btn{
+            display: flex;
+            justify-content: space-around;
+        }
+        input{
+            width: 350px;
+            height: 40px;
+            border: none;
+            border-bottom: 2px solid black;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        .check{
+            display: flex;
+            input{
+                width: 20px;
+            }
+            span{
+                margin-top: 15px;
+            }
+        }
+button,a{
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+    }
+}
+

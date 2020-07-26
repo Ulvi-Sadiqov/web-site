@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+           <form action="" class="form" >
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter Your Name..." id="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" placeholder="Enter Your Surname..." id="surname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Enter Your Email..." id="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Enter Your Password..." required id="password">
+     <div style="display: flex;justify-content: space-around;">
+        <a style="background-color: red;" href="login.html">Login</a>
+        <button id="btnValidate">Creat</button>
+     </div>
+ </form>
+
+ <script>
+  function Person(name,surname,email,password){
+            this.name = name;
+            this.surname = surname;
+            this.email = email;
+            this.password = password;
+        }
+
+  
+
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById("btnValidate").addEventListener("click",function(e){
+                e.preventDefault();
+                let name = document.getElementById("name").value;
+                let surname = document.getElementById("surname").value;
+                let email = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
+
+               let person = new Person(name,surname,email,password);
+
+               if("people" in localStorage){
+               let allPeople = JSON.parse(localStorage.people);
+               if("length" in allPeople){
+                       allPeople.push(person);
+                       localStorage.setItem("people",JSON.stringify(allPeople))
+               }
+               else{
+                   let ms = [];
+                   ms.push(allPeople);
+                   ms.push(person);
+                   localStorage.setItem("people",JSON.stringify(ms));
+               }
+               }
+               else{
+                   localStorage.setItem("people",JSON.stringify(person));
+               }
+            })
+        })
+
+ </script>
+</body>
+</html>
